@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont {
+    background-color: black;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/full1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    background-color: #ff45023d;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 40px;
+    color: #ff4502;
+}
+::placeholder{
+    color: white;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    transition: 0.3s;
+    margin-bottom: -5px;
+}
+
+ul li a:hover {
+    color: #ff4502;
+}
+
+img {
+    width: 400px; /* Ensures images fill their container */
+    height: 300px; /* Adjusted height for mobile */
+    margin-left: 20px;
+    margin-top: 20px;
+    border-color: #ff4502;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures image covers the entire container */
+}
+.dis h1 {
+    margin-top: 100px; /* Adjusted margin for mobile */
+    margin-left: 20px;
+    color: white;
+    font-size: 40px; /* Adjusted font size for mobile */
+    text-align: center;
+}
+
+.dis span {
+    color: #ff4502;
+}
+
+.active {
+    color: #ff4502;
+}
+
+.dis p {
+    width: 100%; /* Full width for mobile */
+    margin-top: 20px;
+    font-size: 20px; /* Adjusted font size for mobile */
+    margin-left: 10px; /* Adjusted margin for mobile */
+    color: white;
+    word-spacing: 1px;
+    text-align: center;
+}
+
+.dis button {
+    padding: 10px;
+    background-color: #ff4502;
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px; /* Adjusted margin for mobile */
+    margin-right: 10px; /* Adjusted margin for mobile */
+    font-size: 18px; /* Adjusted font size for mobile */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.dis button:hover {
+    background-color: aliceblue;
+}
+
+.icons {
+    font-size: 20px; /* Adjusted font size for mobile */
+    margin-top: 20px;
+    margin-left: 10px; /* Adjusted margin for mobile */
+    text-align: center; /* Centered icons for mobile */
+}
+
+.icons a {
+    display: inline-block;
+    margin: 0 10px; /* Adjusted margin for mobile */
+    color: white;
+}
+
+.icons a:hover {
+    color: #ff4502;
+}
+@media( min-width:300px){
+    .form {
+        width: 300px; /* Adjusted width for mobile */
+        max-width: 100%; /* Maximum width for mobile */
+        margin: 20px auto; /* Centered form on mobile */
+        font-size: 3rem;
+    }
+    .cont{
+        background-position: top; 
+        height: auto;
+        width: 100%;
+    }
+    .form h2{
+        font-size: 20px;
+    }
+}
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media screen and (max-width: 320px) {
+    .cont {
+        background-position: center; /* Adjusted background position for better visibility on mobile */
+        height: 60vh;
+    }
+
+    nav {
+        flex-direction: column;
+       justify-content: space-evenly;
+        align-items: flex-start; /* Aligns items to the left */
+        padding: 10px; /* Adjusted padding for mobile */
+    }
+
+    ul {
+        margin-left: 20px; /* Resets left margin */
+        padding-left: 0; /* Resets left padding */
+    }
+
+    ul li {
+        margin-left: 20px; /* Resets left margin */
+        margin-top: 10px; /* Adjusted margin for mobile */
+    }
+
+    nav input, .srch {
+        margin-top: 10px; /* Reduced margin for mobile */
+        margin-left: 0; /* Resets left margin */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .form {
+        width: 200px; /* Adjusted width for mobile */
+        max-width: 300px; /* Maximum width for mobile */
+        margin: 20px auto; /* Centered form on mobile */
+    }
+
+    h2 {
+        margin-left: 10px; /* Adjusted margin for mobile */
+        margin-right: 10px; /* Adjusted margin for mobile */
+    }
+
+    .lg {
+        margin-left: 0; /* Adjusted margin for mobile */
+    }
+
+    .dis h1 {
+        margin-top: 50px; /* Adjusted margin for mobile */
+        font-size: 20px; /* Adjusted font size for mobile */
+    }
+
+    .dis p {
+        font-size: 16px; /* Adjusted font size for mobile */
+        margin-left: 10px; /* Adjusted margin for mobile */
+    }
+
+    .dis button {
+        margin-left: 10px; /* Adjusted margin for mobile */
+        margin-right: 10px; /* Adjusted margin for mobile */
+        font-size: 13px; /* Adjusted font size for mobile */
+    }
+
+    .icons {
+        font-size: 12px; /* Adjusted font size for mobile */
+        margin-left: 10px; /* Adjusted margin for mobile */
+    }
+}

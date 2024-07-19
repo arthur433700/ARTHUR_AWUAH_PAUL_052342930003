@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+}
+
+/* Base styles for all screens */
+.cont {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/bba4.jpg.crdownload);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+nav {
+    display: flex;
+    background-color: #ff45023d;
+    justify-content: space-between; /* Adjusts spacing between items */
+    align-items: center; /* Aligns items vertically */
+    padding: 0 20px; /* Adds padding to nav */
+}
+
+.logo {
+    font-size: 40px;
+    color: #ff4502;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin-left: 20px; /* Reduced margin for mobile */
+    margin-top: 10px; /* Reduced margin for mobile */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    transition: 0.3s;
+    margin-bottom: -5px;
+}
+
+ul li a:hover {
+    color: #ff4502;
+}
+
+nav input, .srch {
+    margin-top: 10px; /* Reduced margin for mobile */
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #ff4502;
+    width: 150px; /* Adjusted width for mobile */
+}
+
+.srch {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #ff4502;
+    color: black;
+}
+
+.srch:hover {
+    background-color: white;
+}
+.dis {
+   margin-left: 40px;
+   margin-top: 50px;
+}
+.f{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.logo h1 {
+    margin-top: 20px; /* Reduced margin for mobile */
+    margin-left: 10px; /* Adjusted margin for mobile */
+    text-align: center;
+    color: white;
+    font-size: 30px; /* Reduced font size for mobile */
+}
+
+ h1 span {
+    font-size: 60px;
+    color: transparent; /* Reduced font size for mobile */
+    text-shadow: 10px 0px 2px #ff4502; /* Adjusted text shadow for mobile */
+}
+::placeholder{
+    color: white;
+}
+
+img {
+    width: 200px; /* Reduced image width for mobile */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px; /* Adjusted margin for mobile */
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ff4502;
+}
+h4{
+    margin-top: 10px;
+    font-size: 30px; /* Reduced font size for mobile */
+    color: rgb(255, 255, 255);
+}
+
+p {
+    text-align: left;
+    float:left ;
+    display: flex;
+    margin-top: 10px;
+    justify-self: center;
+    font-size: 30px; /* Reduced font size for mobile */
+    color: rgb(255, 255, 255);
+}
+@media  (min-width: 300px) {
+    p{
+        font-size: 30px;
+        text-align: center;
+        line-height: 40px;/* Adjusted font size for mobile */
+    }
+    h4{
+        font-size: 30px;
+        text-align: center;
+        line-height: 40px;
+    }
+    img{
+        width: 200px;
+        margin-top: 50px;
+    }
+    .cont{
+        height: 170vh;
+    }
+}  
+
+.dis p .abt {
+    color: #ff4502;
+    font-weight: bold;
+}
+
+.ct {
+    font-size: 16px; /* Reduced font size for mobile */
+    display: flex;
+    width: 100%; /* Full width for mobile */
+}
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media screen and (max-width: 0px) {
+    .cont {
+        background-position: top;
+        height: 10; /* Adjust background position for better visibility */
+    }
+
+    nav {
+        flex-direction: column; /* Stacks navigation items vertically */
+        align-items: flex-start; /* Aligns items to the left */
+        padding: 10px; /* Adjusted padding for mobile */
+    }
+
+    ul {
+        margin-left: 0; /* Resets left margin */
+        padding-left: 0; /* Resets left padding */
+    }
+
+    ul li {
+        margin-left: 0; /* Resets left margin */
+        margin-top: 10px; /* Adjusted margin for mobile */
+    }
+
+    nav input, .srch {
+        margin-top: 10px; /* Reduced margin for mobile */
+        margin-left: 0; /* Resets left margin */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .dis h1 {
+        font-size: 24px; /* Reduced font size for mobile */
+        margin-top: 10px; /* Adjusted margin for mobile */
+    }
+
+    .dis h1 span {
+        font-size: 40px; /* Reduced font size for mobile */
+    }
+
+    img {
+        width: 80px; /* Reduced image width for mobile */
+        margin-top: 10px; /* Adjusted margin for mobile */
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 50px; /* Reduced font size for mobile */
+    }
+    h4{
+        font-size: 20px;
+        line-height: 50px;
+        width: 600px;
+    }
+
+    .ct {
+        font-size: 14px; /* Reduced font size for mobile */
+    }
+}

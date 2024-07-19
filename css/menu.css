@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/R.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.active {
+    color: #ff4502;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff45023d; 
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 40px;
+    color: #ff4502;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    transition: 0.3s;
+    margin-bottom: -5px;
+}
+
+ul li a:hover {
+    color: #ff4502;
+}
+
+input, .srch {
+    margin-top: 10px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #ff4502;
+    width: 150px;
+}
+::placeholder{
+    color: white;
+}
+
+.srch {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #ff4502;
+    color: black;
+}
+
+.srch:hover {
+    background-color: white;
+}
+
+.menu h1 {
+    font-size: 40px; /* Adjusted font size for mobile */
+    text-align: center;
+    color: #ff4502;
+    font-style: italic;
+    text-shadow: 3px 3px 2px black; /* Adjusted text shadow for mobile */
+    margin: 20px 0; /* Adjusted margin for mobile */
+}
+
+.card {
+    margin-top: 50px; /* Adjusted margin for mobile */
+    margin-left: 10px; /* Adjusted margin for mobile */
+    display: flex;
+    flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+    justify-content: center; /* Centers cards horizontally */
+}
+
+.card button {
+    margin: 10px; /* Adjusted margin for mobile */
+    width: 200px; /* Adjusted width for mobile */
+    height: 250px; /* Adjusted height for mobile */
+    border-radius: 10px;
+    border: 1px solid #ff4502;
+    background-color: #ff4502;
+    transition: 0.4s;
+}
+
+.card button:hover {
+    background-color: aliceblue;
+    border-color: aliceblue;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adjusted box shadow for mobile */
+}
+
+img {
+    width: 100%; /* Ensures images fill their container */
+    height: 200px; /* Adjusted height for mobile */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover; /* Ensures image covers the entire container */
+}
+@media (min-width: 300px) {
+    .cont{
+        background-position: top; 
+        height: 100vh;
+        height: auto;
+        width: 100%;
+    }
+}
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media screen and (max-width: 300px) {
+    .cont {
+        background-position: top; /* Adjusted background position for better visibility on mobile */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start; /* Aligns items to the left */
+        padding: 10px; /* Adjusted padding for mobile */
+    }
+
+    ul {
+        margin-left: 0; 
+        ;/* Resets left margin */
+        padding-left: 0; /* Resets left padding */
+    }
+
+    ul li {
+        margin-left: 0;
+        justify-content: space-between; /* Resets left margin */
+        margin-top: 10px; /* Adjusted margin for mobile */
+    }
+
+    nav input, .srch {
+        margin-top: 10px; /* Reduced margin for mobile */
+        margin-left: 0; /* Resets left margin */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .menu h1 {
+        font-size: 30px; /* Adjusted font size for mobile */
+        margin: 10px 0; /* Adjusted margin for mobile */
+    }
+
+    .card {
+        margin-top: 20px; /* Adjusted margin for mobile */
+    }
+
+    .card button {
+        width: 90%; /* Adjusted width for mobile */
+        height: auto; /* Ensures button height adjusts as per content */
+        margin: 10px auto; /* Centered buttons on mobile */
+    }
+
+    img {
+        height: 150px; /* Adjusted height for mobile */
+    }
+}
